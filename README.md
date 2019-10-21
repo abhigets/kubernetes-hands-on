@@ -9,6 +9,7 @@ Aim is to make this run in kubernates minikube
 - [sudo] npm install forever -g
 
 ## following are few helpful commands
+```sh
 
 eval $(minikube docker-env)
 docker build -t abhijeet/node-api-app .
@@ -19,9 +20,9 @@ kubectl delete pods scraper
 kubectl get pods
 kubectl explain pod.spec
 kubectl explain pod --recursive
+```
 
 ## To Run
-
 ```sh
 # Use correct version of node
 npm start
@@ -34,6 +35,7 @@ forever start server.js
 
 # Stop the service
 forever stop server.js
+```
 
 # endpoint examples
 ```javascript
