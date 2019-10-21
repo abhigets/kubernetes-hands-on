@@ -13,6 +13,7 @@ Aim is to make this run in kubernates minikube
 
 eval $(minikube docker-env)
 docker build -t abhijeet/node-api-app .
+docker container run -d -it --name api abhijeet/node-api-app:latest
 
 kubectl create -f mypod.yml
 kubectl describe pod scraper
