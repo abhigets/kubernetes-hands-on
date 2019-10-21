@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: scraper
+  labels:
+    name: scraper
+    functionality: address
+    env: dev
+spec:
+  containers:
+  - name: api
+    image: abhijeet/node-api-app:latest
+    imagePullPolicy: Never
+    ports:
+      - name: http 
+        containerPort: 80
+        protocol: TCP

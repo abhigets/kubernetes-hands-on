@@ -1,0 +1,21 @@
+{
+  "name": "address-scraper-app",
+  "version": "1.0.0",
+  "description": "rest service to return address",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hot-deploy": "nodemon ./server.js"
+  },
+  "author": "abhijeet patil",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "cypress-promise": "^1.0.2",
+    "nodemon": "^1.19.1",
+    "xvfb": "^0.2.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
