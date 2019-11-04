@@ -15,12 +15,20 @@ eval $(minikube docker-env)
 docker build -t abhijeet/node-api-app .
 docker container run -d -it --name api abhijeet/node-api-app:latest
 
+docker exec -it df71ff981acf bash
+
 kubectl create -f mypod.yml
 kubectl describe pod scraper
 kubectl delete pods scraper
 kubectl get pods
 kubectl explain pod.spec
 kubectl explain pod --recursive
+
+kubectl create -f deployments.yml
+kubectl create -f service.yml
+
+kubectl get service scraper -o yaml
+kubectl get pods -o wide
 ```
 
 ## To Run
