@@ -12,12 +12,12 @@ spec:
   ports:
   - port: 80
     protocol: TCP
-    targetPort: 3001
+    targetPort: 8080
   selector:
     env: dev
     functionality: address
     name: scraper
   sessionAffinity: None
-  type: ClusterIP
+  type: NodePort
 status:
   loadBalancer: {}
