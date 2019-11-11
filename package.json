@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "hot-deploy": "nodemon ./server.js"
+    "hot-deploy": "nodemon ./server.js",
+    "forever": "forever -a server.js",
+    "stop-forever": "forever stop server.js"
   },
   "author": "abhijeet patil",
   "license": "ISC",
